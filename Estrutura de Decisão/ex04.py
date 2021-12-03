@@ -3,18 +3,14 @@
 letra = input("Digite uma letra: ").upper()
 
 contagem = len(letra)
-n = letra.isnumeric()
+n = letra.isalpha()
 
-
-if contagem == 1 and n == False:
+if contagem == 1 and n == True:
     if letra == "A" or letra == "E" or letra == "I" or letra == "O" or letra == "U":
         print("A letra Digitada é vogal")
     
     else:
         print("A letra digitada é Consoante")
 
-elif n == True:
-    print("Isso é um numero")
-
 else:
-    print("Digite novamente")
+    print("Digite somente letras")
